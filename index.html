@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Hand Gesture Recognizer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <center>
+    <div>
+      <h1 class="btn btn-warning" id="title">
+        <kbd>Hand Gesture Recognizer</kbd>
+        <p>👍 | ✌ | 👊 | 🤙 | 🖐</p>
+      </h1>
+    </div>
+  <div>
+    <span>
+      <h2>
+        <label>Webcam View 📷</label>
+      </h2>
+      <hr>
+      <div id="camera">
+
+      </div>
+      <br>
+      <button class="btn btn-success" onclick="snapshot()">Snapshot</button>
+    </span>
+    <span>
+      <h2>
+        <label>Prediction</label>
+      </h2>
+     <div>
+      <p id="display_prediction"></p>
+      <p id="display_gesture"></p>
+      </div>
+    </span>
+    <span>
+      <h2>
+        <label>Result 🎬</label>
+      </h2>
+      <div id="result">
+
+      </div>
+      <br>
+      <button class="btn btn-danger">Identify</button>
+    </span>
+    
+  </div>
+  </center>
+  <script src="main.js"></script>
+  </body>
+</html>
