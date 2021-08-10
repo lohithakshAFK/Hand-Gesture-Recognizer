@@ -12,3 +12,6 @@ function snapshot(){
         document.getElementById("result").innerHTML = '<img id="captured_image" src="'+data_uri+'">';
     });
 }
+
+console.log("ml5 version:", ml5.version);
+classify = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/SLWZ0DDQM/modal.json", modelLoaded);
